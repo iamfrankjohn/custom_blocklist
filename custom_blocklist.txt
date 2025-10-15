@@ -52,16 +52,10 @@ tradedesk.com
 yandexadexchange.net
 disqus.com
 
-# YouTube Ads (Critical domains that break the YouTube app have been commented out)
+# YouTube Ads
 youtube.com/api/stats/ads
 youtube.com/pagead/
-# googlevideo.com 
-# yt3.ggpht.com
-# s.youtube.com
-# video-stats.l.google.com
 pagead2.googlesyndication.com
-# youtubei.googleapis.com
-# youtube.googleapis.com
 
 # Popups / Redirects / Malware
 onclickads.net
