@@ -1,10 +1,23 @@
 # =========================================================
-# Custom Blocklist for AdGuard Home
-# Purpose: Block ads, popups, gambling, porn, malware, and trackers
-# Author: KOUFU MIS (custom curated)
+# MASTER BLOCKLIST for AdGuard Home
+# Combines:
+#  - Custom curated entries (ads, popups, gambling, porn, illegal, malware)
+#  - AdGuard DNS base filter
+#  - OISD basic list
+#  - StevenBlack unified hosts
+#  - AdAway hosts
+#  - 1Hosts Pro domains
 # =========================================================
 
-# --- GENERAL ADVERTISING & TRACKERS ---
+# --- EXTERNAL SOURCES ---
+https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+https://oisd.nl/downloads/basic
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt
+https://raw.githubusercontent.com/badmojr/1Hosts/master/Pro/domains.txt
+
+# --- LOCAL CUSTOM ENTRIES ---
+# General Ads / Trackers
 doubleclick.net
 googlesyndication.com
 googletagservices.com
@@ -29,7 +42,6 @@ popcash.net
 exosrv.com
 trafficjunky.net
 adform.net
-rutrk.org
 openx.net
 smartadserver.com
 rubiconproject.com
@@ -40,7 +52,7 @@ tradedesk.com
 yandexadexchange.net
 disqus.com
 
-# --- YOUTUBE AD DOMAINS ---
+# YouTube Ads
 youtube.com/api/stats/ads
 youtube.com/pagead/
 googlevideo.com
@@ -51,7 +63,7 @@ pagead2.googlesyndication.com
 youtubei.googleapis.com
 youtube.googleapis.com
 
-# --- POPUP / REDIRECT / MALWARE ---
+# Popups / Redirects / Malware
 onclickads.net
 shorte.st
 adf.ly
@@ -59,22 +71,19 @@ ouo.io
 cut-urls.com
 linkvertise.com
 linkbucks.com
-biturl.top
 coinhive.com
 crypto-loot.com
 browsermine.com
-bittads.com
 clickadu.com
 clksite.com
 trafmag.com
 redirectvoluum.com
 iclickcdn.com
 surfearner.com
-bestcontentoperations.top
 monetag.com
 adfoc.us
 
-# --- GAMBLING / BETTING / CASINO (PH + GLOBAL) ---
+# Gambling / Betting / Casino
 bet365.com
 1xbet.com
 22bet.com
@@ -104,7 +113,7 @@ parimatch.com
 melbet.com
 betvictor.com
 
-# --- PORNOGRAPHY / ADULT / ILLEGAL CONTENT ---
+# Porn / Adult / Illegal
 pornhub.com
 xvideos.com
 xhamster.com
@@ -125,24 +134,20 @@ spankbang.com
 fapello.com
 bestgore.com
 motherless.com
-8muses.com
 javhd.com
-3movs.com
 yespornplease.com
 tnaflix.com
 chaturbate.com
 pornone.com
-sextvx.com
 rapetube.net
 darkwebpornosite.com
 childporn.xxx
 cpvideos.org
-torporn.net
-anonfiles.com  # often used for CSAM/illegal content
+anonfiles.com
 mixdrop.co
 streamsb.net
 
-# --- MALWARE / PHISHING / SCAMS ---
+# Malware / Phishing / Scams
 malwarebytes.site
 phishingsite.com
 get-rich-quick.biz
@@ -162,11 +167,9 @@ meta-masklogin.com
 coinminerz.com
 cryptominingpool.net
 minerstatproxy.net
-scamadviser.net
-ads4btc.com
 getcryptotoken.com
 
-# --- TRACKERS / ANALYTICS / PRIVACY RISKS ---
+# Trackers / Analytics
 facebook.net
 connect.facebook.net
 graph.facebook.com
@@ -182,20 +185,16 @@ bluekai.com
 demdex.net
 everesttech.net
 mathtag.com
-yieldoptimizer.com
 crashlytics.com
 amazon-adsystem.com
 pixel.wp.com
-static.ads-twitter.com
 ads-twitter.com
 analytics.twitter.com
 snapads.com
-tiktokcdn.com
 ads.tiktok.com
 
-# --- MISC. SPAM / FRAUD / UNSAFE DOMAINS ---
+# Spam / Piracy / VPN / Dark Sites
 mediafireporn.com
-mega.nz/file_share
 freemoviehd.net
 piratebay.org
 1337x.to
