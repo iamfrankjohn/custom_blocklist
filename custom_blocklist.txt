@@ -4,7 +4,6 @@
 #  - Custom curated entries (ads, popups, gambling, porn, illegal, malware)
 # =========================================================
 
-
 # --- LOCAL CUSTOM ENTRIES ---
 # General Ads / Trackers
 doubleclick.net
@@ -191,4 +190,5 @@ hidemy.name
 vpnbook.com
 vpnhub.com
 darkwebtor.com
+
 
