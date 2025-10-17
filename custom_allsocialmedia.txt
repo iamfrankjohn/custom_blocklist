@@ -1,0 +1,110 @@
+# =========================================================
+# CUSTOM SOCIAL MEDIA BLOCKLIST for AdGuard Home
+# Blocks social networking sites, APIs, pixels, and apps
+# Recommended: Use as a separate optional list
+# =========================================================
+
+# --- FACEBOOK / MESSENGER / INSTAGRAM ---
+facebook.com
+fbcdn.net
+fb.com
+messenger.com
+instagram.com
+cdninstagram.com
+threads.net
+connect.facebook.net
+graph.facebook.com
+b-graph.facebook.com
+edge-mqtt.facebook.com
+mqtt-mini.facebook.com
+pixel.facebook.com
+
+# --- X / TWITTER ---
+twitter.com
+t.co
+twimg.com
+analytics.twitter.com
+ads-twitter.com
+
+# --- TIKTOK ---
+tiktok.com
+m.tiktok.com
+ads.tiktok.com
+analytics.tiktok.com
+tiktokcdn.com
+tiktokv.com
+
+# --- SNAPCHAT ---
+snapchat.com
+app.snapchat.com
+ads.snapchat.com
+snapads.com
+
+# --- YOUTUBE / GOOGLE VIDEO ---
+youtube.com
+ytimg.com
+youtube-nocookie.com
+youtubei.googleapis.com
+yt3.ggpht.com
+
+# --- REDDIT ---
+reddit.com
+www.reddit.com
+events.reddit.com
+ads.reddit.com
+redditmedia.com
+redditstatic.com
+
+# --- LINKEDIN ---
+linkedin.com
+www.linkedin.com
+tracking.linkedin.com
+licdn.com
+licdn.net
+
+# --- PINTEREST ---
+pinterest.com
+www.pinterest.com
+analytics.pinterest.com
+log.pinterest.com
+
+# --- DISCORD ---
+discord.com
+cdn.discordapp.com
+discordapp.com
+discord.gg
+
+# --- TELEGRAM ---
+t.me
+telegram.org
+web.telegram.org
+telegram.me
+
+# --- TUMBLR ---
+tumblr.com
+assets.tumblr.com
+media.tumblr.com
+
+# --- OK / VK / RUSSIAN SOCIAL NETWORKS ---
+ok.ru
+connect.ok.ru
+vk.com
+vkontakte.ru
+mail.ru
+connect.mail.ru
+
+# --- OTHER SOCIAL / COMMUNITY SITES ---
+threads.net
+truthsocial.com
+mastodon.social
+gab.com
+parler.com
+gettr.com
+clubhouse.com
+weibo.com
+wechat.com
+wechatapp.com
+line.me
+line-apps.com
+kakao.com
+kakaocdn.net
