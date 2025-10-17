@@ -2,6 +2,7 @@
 # MASTER BLOCKLIST for AdGuard Home
 # Combines:
 #  - Custom curated entries (ads, popups, gambling, porn, illegal, malware)
+#  - Updated with 2025 ad, scam, and tracking networks
 # =========================================================
 
 # --- LOCAL CUSTOM ENTRIES ---
@@ -39,6 +40,22 @@ yieldmo.com
 tradedesk.com
 yandexadexchange.net
 disqus.com
+ads.yieldmo.com
+ads.tremorhub.com
+ads.smaato.com
+ads.avocet.io
+ads.lfstmedia.com
+adroll.com
+adcolony.com
+chartboost.com
+inmobi.com
+tapjoy.com
+unityads.unity3d.com
+vungle.com
+fyber.com
+spotxchange.com
+indexexchange.com
+revjet.com
 
 # YouTube Ads
 youtube.com/api/stats/ads
@@ -58,7 +75,6 @@ crypto-loot.com
 browsermine.com
 clickadu.com
 clksite.com
-trafmag.com
 redirectvoluum.com
 iclickcdn.com
 surfearner.com
@@ -150,6 +166,17 @@ coinminerz.com
 cryptominingpool.net
 minerstatproxy.net
 getcryptotoken.com
+airdropsclaim.net
+crypto-giveaway.net
+fakewallet.org
+ledgerlivewallet.net
+metamasklogin.io
+trustwalletverify.net
+defi-airdrop.com
+coinclaim.org
+walletauthentic.com
+verifywallet.net
+claimairdrop.io
 
 # Trackers / Analytics
 google-analytics.com
@@ -171,9 +198,17 @@ ads-twitter.com
 analytics.twitter.com
 snapads.com
 ads.tiktok.com
+connect.ok.ru
+connect.mail.ru
+pixel.facebook.com
+tracking.linkedin.com
+events.reddit.com
+log.pinterest.com
+analytics.pinterest.com
+ads.reddit.com
+ads.snapchat.com
 
 # Spam / Piracy / VPN / Dark Sites
-mediafireporn.com
 freemoviehd.net
 piratebay.org
 1337x.to
@@ -186,4 +221,9 @@ proxysite.com
 hidemy.name
 vpnbook.com
 vpnhub.com
-darkwebtor.com
+kproxy.com
+proxyscrape.com
+us-proxy.org
+vpnapi.io
+vpntunnel.com
+vpnunlimitedapp.com
