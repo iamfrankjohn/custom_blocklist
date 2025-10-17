@@ -152,9 +152,6 @@ minerstatproxy.net
 getcryptotoken.com
 
 # Trackers / Analytics
-facebook.net
-connect.facebook.net
-graph.facebook.com
 google-analytics.com
 googletagmanager.com
 hotjar.com
@@ -190,5 +187,3 @@ hidemy.name
 vpnbook.com
 vpnhub.com
 darkwebtor.com
-
-
