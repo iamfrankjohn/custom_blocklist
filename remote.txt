@@ -1,0 +1,216 @@
+# =========================================================
+# CUSTOM REMOTE ACCESS & CONTROL BLOCKLIST (STRICT)
+# Blocks all known remote control, remote desktop, and screen-sharing
+# tools, including app-level and relay endpoints across all platforms.
+# =========================================================
+
+# --- ANYDESK ---
+anydesk.com
+relay.anydesk.com
+connect.anydesk.com
+backend.anydesk.com
+api.anydesk.com
+updates.anydesk.com
+download.anydesk.com
+link.anydesk.com
+track.anydesk.com
+relay-*.anydesk.com
+*.anydesk.com
+
+# --- TEAMVIEWER ---
+teamviewer.com
+www.teamviewer.com
+dl.teamviewer.com
+router.teamviewer.com
+update.teamviewer.com
+dns.teamviewer.com
+webapi.teamviewer.com
+web.teamviewer.com
+tvlink.tv
+teamviewerquickconnect.com
+teamviewerusercontent.com
+*.teamviewer.com
+
+# --- RUSTDESK ---
+rustdesk.com
+relay.rustdesk.com
+server.rustdesk.com
+api.rustdesk.com
+download.rustdesk.com
+relay-*.rustdesk.com
+*.rustdesk.com
+
+# --- CHROME REMOTE DESKTOP / GOOGLE REMOTING ---
+remotedesktop.google.com
+remoting-pa.googleapis.com
+talkgadget.google.com
+chromoting-oauth.talk.google.com
+remotedesktophost.exe
+chromeremotedesktophost.exe
+
+# --- ZOHO ASSIST / MANAGEENGINE ---
+zohoassist.com
+assist.zoho.com
+manageengine.com
+remoteutilities.com
+remoteutilities.net
+remoteutilities.us
+manageengine.eu
+zoho.com
+assist.zoho.eu
+assistzoho.net
+
+# --- ULTRAVNC / TIGHTVNC / REALVNC ---
+realvnc.com
+auth.realvnc.com
+cloud.realvnc.com
+vnc.com
+tightvnc.com
+ultravnc.com
+uvnc.com
+*.realvnc.com
+*.tightvnc.com
+
+# --- SUPREMO / SPLASHTOP / ANYVIEWER / AWERAY ---
+supremocontrol.com
+update.supremocontrol.com
+dl.supremocontrol.com
+splashtop.com
+my.splashtop.com
+gateway.splashtop.com
+update.splashtop.com
+anyviewer.com
+aweray.com
+awerayremote.com
+remotepc.com
+api.remotepc.com
+mobile.remotepc.com
+files.remotepc.com
+
+# --- PARSEC / MOONLIGHT / NVIDIA GAMESTREAM ---
+parsec.app
+builds.parsec.app
+gateway.parsec.app
+api.parsec.app
+relay.parsec.app
+moonlight-stream.org
+nvstreamsrv.exe
+gamestream.nvidia.com
+nvstreamer.exe
+
+# --- GOTOMYPC / LOGMEIN / HAMACHI / JOIN.ME ---
+gotomypc.com
+secure.logmein.com
+logmein.com
+join.me
+joinme.com
+hamachi.cc
+hamachi.com
+meshcentral.com
+meshcommander.com
+*.logmein.com
+*.join.me
+
+# --- CONNECTWISE / SCREENCONNECT / DAMEWARE ---
+connectwise.com
+connectwisecontrol.com
+screenconnect.com
+screenconnect.net
+dameware.com
+ninjaone.com
+remote.management
+mspcontrol.com
+*.screenconnect.com
+*.connectwise.com
+
+# --- WINDOWS / MICROSOFT REMOTE ---
+rdweb.wvd.microsoft.com
+rdgateway.microsoft.com
+remoteapp.windowsazure.com
+remote.desktop.windows.com
+rdgateway.net
+msrdc.exe
+wvd.microsoft.com
+rdp.microsoft.com
+autodiscover.rd.microsoft.com
+
+# --- CLOUD REMOTE / IT SUPPORT SERVICES ---
+helpdesk.com
+remotely.one
+helpviewer.net
+cloudberrylab.com
+msp360.com
+lite-manager.com
+ammyy.com
+ammyy.com.ru
+radmin.com
+radmin.ru
+showmypc.com
+liteManager.com
+dualmon.com
+remotesupport.com
+fixme.it
+takecontrol.io
+
+# --- APP / MOBILE REMOTE ACCESS TOOLS ---
+airdroid.com
+api.airdroid.com
+web.airdroid.com
+push.airdroid.com
+airdroid.cn
+airmirror.com
+airdroid.biz
+airdroid.io
+mobizen.com
+join.airdroid.com
+scrcpy.net
+vysor.io
+vysor.dev
+apowersoft.com
+apowersoft.cn
+apowersoft.io
+apowerremote.com
+anymirror.com
+mobcontrol.com
+remotrapp.com
+splashtopremote.com
+miracast.net
+screenmirrorapp.com
+
+# --- ENTERPRISE REMOTE / MONITORING ---
+bomgar.com
+beyondtrustcloud.com
+beyondtrust.com
+rsupport.com
+remoteview.com
+remoteview.co.kr
+fixme.it
+getscreen.me
+getsupport.me
+glance.net
+browsersupport.net
+
+# --- OTHER GAME/STREAM REMOTE TOOLS ---
+steamremoteplay.com
+steampowered.com/remote
+rainway.com
+moonlight.app
+parsecgaming.com
+remotegame.app
+rainwaygaming.com
+
+# --- VPN-LIKE REMOTE CONNECTIVITY SERVICES (used for bypassing DNS blocks) ---
+zerotier.com
+zerotier.net
+tailscale.com
+tailscale.io
+ngrok.io
+localtonet.com
+serveo.net
+localhost.run
+frp.sh
+remot3.it
+remote.it
+*.zerotier.com
+*.tailscale.com
+*.ngrok.io
