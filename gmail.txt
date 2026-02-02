@@ -1,0 +1,9 @@
+# Block Gmail domains - AdGuard
+
+||mail.google.com^
+||gmail.com^
+||googlemail.com^
+
+# Optional: block Gmail image and attachment access
+||lh3.googleusercontent.com^
+||mail-attachment.googleusercontent.com^
