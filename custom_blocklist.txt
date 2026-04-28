@@ -164,27 +164,6 @@
 ||1337x.to^
 ||yts.mx^
 
-# =========================
-# OPTIONAL (UNCOMMENT IF NEEDED)
-# These may break apps/login/features
-# =========================
-
-# Facebook full block (breaks login/media)
-# ||facebook.com^
-# ||fbcdn.net^
-# ||connect.facebook.net^
-
-# Twitter/X links (breaks redirects)
-# ||t.co^
-
-# App deep links (GCash, Shopee, etc.)
-# ||branch.io^
-# ||app.link^
-
-# Email tracking (may break verification links)
-# ||sendgrid.net^
-# ||mailchimp.com^
-
 # =========================================================
 # END
 # =========================================================
