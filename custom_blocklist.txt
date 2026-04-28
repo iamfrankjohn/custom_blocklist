@@ -1,1265 +1,216 @@
 # =========================================================
-# MASTER BLOCKLIST for AdGuard Home
-# Combines:
-#  - Custom curated entries (ads, popups, gambling, porn, illegal, malware)
-#  - Updated with 2025 ad, scam, and tracking networks
+# STRICT MAX BLOCKLIST (AdGuard Home)
+# Goal: Maximum blocking (ads, tracking, gambling, adult,
+#       piracy, telemetry, bypass tools)
+# WARNING: May break apps, logins, media, emails
 # =========================================================
 
-# --- LOCAL CUSTOM ENTRIES ---
-# General Ads / Trackers
+# =========================
+# GOOGLE / CORE ADS
+# =========================
 ||doubleclick.net^
 ||googlesyndication.com^
 ||googletagservices.com^
 ||adservice.google.com^
-||adservice.google.com.ph^
-||ads.youtube.com^
-||ads.pubmatic.com^
-||adsafeprotected.com^
-||adnxs.com^
-||advertising.com^
-||appsflyer.com^
-||moatads.com^
-||scorecardresearch.com^
-||zedo.com^
-||criteo.com^
-||taboola.com^
-||outbrain.com^
-||revcontent.com^
-||propellerads.com^
-||popads.net^
-||popcash.net^
-||exosrv.com^
-||trafficjunky.net^
-||adform.net^
-||openx.net^
-||smartadserver.com^
-||rubiconproject.com^
-||casalemedia.com^
-||contextweb.com^
-||yieldmo.com^
-||tradedesk.com^
-||yandexadexchange.net^
-||disqus.com^
-||ads.yieldmo.com^
-||ads.tremorhub.com^
-||ads.smaato.com^
-||ads.avocet.io^
-||ads.lfstmedia.com^
-||adroll.com^
-||adcolony.com^
-||chartboost.com^
-||inmobi.com^
-||tapjoy.com^
-||unityads.unity3d.com^
-||vungle.com^
-||fyber.com^
-||spotxchange.com^
-||indexexchange.com^
-||revjet.com^
-
-# Mobile / In-App Ad SDKs (Android & iOS)
-# These are DNS-blockable ad networks embedded in mobile apps
-||admob.com^
-||googleadmob.com^
-||ad.admob.com^
-||ads.admob.com^
 ||googleads.g.doubleclick.net^
-||mobile.doubleclick.net^
-||mobileads.google.com^
 ||pagead2.googlesyndication.com^
-# Facebook / Meta Audience Network (in-app ads)
-||graph.facebook.com/ads^
-||an.facebook.com^
-||audience-network.facebook.com^
+||tpc.googlesyndication.com^
+
+# =========================
+# FULL TRACKING / ANALYTICS
+# =========================
+||google-analytics.com^
+||googletagmanager.com^
+||analytics.google.com^
+
+||hotjar.com^
+||mixpanel.com^
+||segment.io^
+||optimizely.com^
+
+||scorecardresearch.com^
+||quantserve.com^
+||doubleverify.com^
+
+# =========================
+# SOCIAL TRACKING (AGGRESSIVE)
+# =========================
+||facebook.com^
 ||fbcdn.net^
 ||connect.facebook.net^
-# MoPub (Twitter/X ad network used in many apps)
-||mopub.com^
-||ads.mopub.com^
-# IronSource (used heavily in mobile games)
-||ironsource.com^
-||ads.ironsource.com^
-||supersonicads.com^
-||supersonic.com^
-# AppLovin (major mobile ad platform)
-||applovin.com^
-||ads.applovin.com^
-||data.applovin.com^
-||applovin-creatives.com^
-# Liftoff / Vungle / Fyber (in-app)
-||liftoff.io^
-||vungle.com^
-||ads.fyber.com^
-||inner-active.mobi^
-||inneractive.com^
-# AdColony / Digital Turbine
-||adcolony.com^
-||digitalturbine.com^
-||ads.digitalturbine.com^
-||dtscout.com^
-||dt.beachfront.com^
-# Smaato
-||smaato.net^
-||ads.smaato.net^
-||smaato.com^
-# Millennial Media / Oath
-||millennialmedia.com^
-||ads.millennialmedia.com^
-||oath.com^
-||advertising.yahoo.com^
-# Flurry Analytics & Ads (Yahoo)
-||flurry.com^
-||ads.flurry.com^
-||analytics.yahoo.com^
-# InMobi
-||inmobi.com^
-||c.inmobi.com^
-||i.inmobi.com^
-||cf.cdn.inmobi.com^
-# Chartboost
-||chartboost.com^
-||live.chartboost.com^
-# TapJoy
-||tapjoy.com^
-||analytics.tapjoy.com^
-||reporting.tapjoy.com^
-# Unity Ads (mobile games)
-||unityads.unity3d.com^
-||auction.unityads.unity3d.com^
-||config.unityads.unity3d.com^
-||cdp.cloud.unity3d.com^
-||ads-game-configuration.unityads.unity3d.com^
-# Ogury (mobile-focused)
-||ogury.com^
-||ads.ogury.com^
-||data.ogury.com^
-# Yandex Mobile Ads
-||mobile.yandex.net^
-||ads.yandex.com^
-||an.yandex.ru^
-# Pangle / TikTok Audience Network (used in 3rd party apps)
-||pangle.io^
-||pangleglobal.com^
+||pixel.facebook.com^
+||tr.facebook.com^
+
+||t.co^
+||ads-twitter.com^
+||analytics.twitter.com^
+
 ||ads.tiktok.com^
-||ad.tiktok.com^
-# Snap Audience Network
-||adsap.snapchat.com^
-||tr.snapchat.com^
-# Twitter/X MoPub remnants
-||ads.twitter.com^
-||syndication.twitter.com^
-# Adjust (mobile attribution/tracking SDK)
-||adjust.com^
-||app.adjust.com^
-||s2s.adjust.com^
-# Kochava (mobile tracking)
-||kochava.com^
-||control.kochava.com^
-||track.kochava.com^
-# Branch.io (deep links + ads)
+||analytics.tiktok.com^
+||log.byteoversea.com^
+
+||ads.reddit.com^
+||events.reddit.com^
+
+# =========================
+# MOBILE ADS / SDKs
+# =========================
+||admob.com^
+||googleadmob.com^
+||mobileads.google.com^
+
+||unityads.unity3d.com^
+||vungle.com^
+||chartboost.com^
+||tapjoy.com^
+||applovin.com^
+||ironsource.com^
+||fyber.com^
+||smaato.net^
+||inmobi.com^
+
+# =========================
+# MICROSOFT / APPLE TELEMETRY
+# =========================
+||vortex.data.microsoft.com^
+||settings-win.data.microsoft.com^
+||watson.telemetry.microsoft.com^
+
+||metrics.apple.com^
+||api.smoot.apple.com^
+||guzzoni.apple.com^
+
+# =========================
+# APP TRACKING / DEEP LINKS (BLOCKED)
+# =========================
 ||branch.io^
 ||app.link^
 ||bnc.lt^
-# Singular (mobile attribution)
-||singular.net^
-||sdk.singular.net^
-# Sensor Tower / Data.ai (ad intelligence)
-||sensortower.com^
-# Sizmek / Amazon DSP
-||sizmek.com^
-||ads.sizmek.com^
-||serving.sizmek.com^
-# Lotame (mobile DMP)
-||crwdcntrl.net^
-||lotame.com^
-# RevMob
-||revmobmobileadnetwork.com^
-||revmob.com^
-# StartApp
-||startapp.com^
-||ads.startapp.com^
-# Minimob
-||minimob.com^
-# Yeahmobi
-||yeahmobi.com^
-# Maio (Japanese ad network common in PH apps)
-||maio.jp^
-||ads.maio.jp^
-# Nend (mobile)
-||nend.net^
-||ads.nend.net^
 
-# YouTube Ads
-# Note: DNS-level blocking cannot remove YouTube pre-roll ads served from
-# youtube.com itself. Use uBlock Origin or AdGuard browser extension for that.
-# These entries block the ad infrastructure and tracking around YouTube.
-||youtube.com/api/stats/ads^
-||youtube.com/pagead/^
-||pagead2.googlesyndication.com^
-||ad.doubleclick.net^
-||googleads.g.doubleclick.net^
-||stats.g.doubleclick.net^
-||cm.g.doubleclick.net^
-||securepubads.g.doubleclick.net^
-||tpc.googlesyndication.com^
-||adservice.google.com^
-||imasdk.googleapis.com^
-||s0.2mdn.net^
-||video-stats.l.google.com^
-||yt3.ggpht.com^
-||youtubei.googleapis.com/youtubei/v1/log_event^
-||static.doubleclick.net^
-||media.doubleclick.net^
-||survey.g.doubleclick.net^
+# =========================
+# EMAIL TRACKING (BREAKS EMAIL LINKS)
+# =========================
+||sendgrid.net^
+||mailchimp.com^
+||track.sendgrid.net^
+||mandrillapp.com^
 
-# Popups / Redirects / Malware
-# --- URL Shorteners / Clickjacking / Redirect Chains ---
+# =========================
+# POPUPS / REDIRECT CHAINS
+# =========================
 ||onclickads.net^
-||shorte.st^
 ||adf.ly^
 ||ouo.io^
-||cut-urls.com^
 ||linkvertise.com^
 ||linkbucks.com^
-||adfoc.us^
-||bc.vc^
-||shorten.ws^
-||shrinkme.io^
-||shortearn.eu^
-||shortzon.com^
-||shortdrive.net^
-||fc.lc^
-||oke.io^
-||za.gl^
-||go.ly^
-||shrinke.me^
-||clk.sh^
-||gplinks.co^
-||gplinks.in^
-||earn4clicks.net^
-||link1s.com^
-||shrinkurl.us^
-||sub2unlock.net^
-||adshort.im^
-||clixsense.com^
-||sharecash.org^
-||i.got.nothing.com^
-||exe.io^
-||exey.io^
-||di.do^
-||onlinefast.org^
 
-# --- Popup / Push Notification Networks ---
 ||push.house^
 ||pushpush.net^
 ||megapush.com^
-||pushground.com^
-||evadav.com^
-||richpush.co^
 ||adsterra.com^
-||adsterranetwork.com^
-||hilltopads.net^
 ||trafficstars.com^
-||ads.trafficstars.com^
-||trafficfactory.biz^
-||popcash.net^
-||popads.net^
-||popunder.net^
-||popads.net^
-||juicyads.com^
-||cpmrevenuegate.com^
-||zeropark.com^
-||exoclick.com^
-||ads.exoclick.com^
-||clickaine.com^
-||plugrush.com^
-||adpushup.com^
-||notix.io^
-||pushcrew.com^
-||pushengage.com^
-||onesignal.com^
-||pushwoosh.com^
-||web-push-notifications.com^
-||mopush.com^
-||voluum.com^
-||redirectvoluum.com^
-||iclickcdn.com^
-||clickadu.com^
-||clksite.com^
 
-# --- Cryptojacking / Browser Mining ---
+# =========================
+# CRYPTO MINING / ABUSE
+# =========================
 ||coinhive.com^
 ||crypto-loot.com^
-||browsermine.com^
-||surfearner.com^
-||monetag.com^
-||coin-hive.com^
-||cryptoloot.pro^
 ||webmine.pro^
-||minero.pw^
-||miner.pr0gramm.com^
-||minemytraffic.com^
-||papoto.com^
-||jsecoin.com^
-||authedmine.com^
-||coinblind.com^
-||cryptonight.wasm^
-||wminerpool.com^
-||hashforcash.eu^
-||load.jsecoin.com^
-||rocks.io^
-||webminepool.com^
+||minerstatproxy.net^
 
-# --- Malware / Exploit Kits / Drive-by Downloads ---
-||malwarebytes.site^
-||phishingsite.com^
-||exploitkit.net^
-||angler-ek.com^
-||neutrino-ek.net^
-||rig-ek.com^
-||magnitude-ek.com^
-||fallout-ek.com^
-||spelevo-ek.net^
-||underminer-ek.com^
-||eviltraffic.net^
-||trafficconverter.biz^
-||clicksfly.com^
-||clicksfly.net^
-||trafficholder.com^
-||revcontent.com^
-||bidvertiser.com^
-||popundertraffic.com^
-||onclkds.com^
-||adworksmedia.com^
-||machineryads.com^
-||activerevenue.com^
-||adxpansion.com^
-||eroadvertising.com^
-||trafficshop.com^
-||traffic-media.co^
-||traffbrz.com^
-||trafficbroker.com^
-||cpamatica.io^
-||adnetworkperformance.com^
-
-# --- Fake Update / Tech Support Scam Pages ---
-||updatenow.site^
-||flash-update.net^
-||chrome-update.net^
-||browser-update.org^
-||windows-update.live^
-||driver-update.net^
-||techsupportscam.com^
-||fixmypc.live^
-||cleanmypc.live^
-||yourtechsupport.net^
-||alertwindows.com^
-||securityalert.site^
-||virusdetected.net^
-||windowsdefenderalert.com^
-||microsoftsupport.live^
-||applesupportcenter.net^
-||icloud-verify.net^
-||appleid-verify.com^
-
-# Gambling / Betting / Casino
-# --- Global / International ---
-||bet365.com^
-||1xbet.com^
-||22bet.com^
-||pinnacle.com^
-||888casino.com^
-||888sport.com^
-||sbobet.com^
-||betfair.com^
-||wazamba.com^
-||betway.com^
-||sportsbet.io^
-||fun88.com^
-||casino.com^
-||m88.com^
-||leovegas.com^
-||stake.com^
-||spinpalace.com^
-||jackpotcitycasino.com^
-||casumo.com^
-||parimatch.com^
-||melbet.com^
-||melbet.com.ph^
-||betvictor.com^
-||bc.game^
-||ggbet.com^
-||20bet.com^
-||betwinner.com^
-||1win.com^
-||mostbet.com^
-||vavada.com^
-||megapari.com^
-||bettilt.com^
-||roobet.com^
-||rollbit.com^
-||draftkings.com^
-||fanduel.com^
-||betmgm.com^
-||pointsbet.com^
-||unibet.com^
-||bwin.com^
-||888poker.com^
-||ggpoker.com^
-||pokerstars.com^
-||partypoker.com^
-||winamax.fr^
-||betsson.com^
-||nordicbet.com^
-||rizk.com^
-||guts.com^
-||mrgreen.com^
-||casinoroom.com^
-||kaboo.com^
-
-# --- PH-Specific / PAGCOR-Licensed (Local Platforms) ---
-||okbet.com^
-||games.okbet.com^
-||bet88.ph^
-||bet88.com^
-||arenaplus.ph^
-||bingoplus.com^
-||bng.games^
-||casinoplus.com.ph^
-||filbet.com^
-||filgame.com^
-||luckycola.com.ph^
-||luckycola.ph^
-||winzir.com^
-||winzir.ph^
-||luckygame.ph^
-||patokbet.com^
-||digitalwin.ph^
-||luckywin.ph^
-||hannliveonline.com^
-||megaperya.com^
-||jilibet.com^
-||jilibet.ph^
-||philwin.ph^
-||peryaplus.com^
-||spinplus.ph^
-||slotplus.ph^
-||aplus.ph^
-||789bingo.com^
-||happybingo.ph^
-||midori-online.com^
-||solaireonline.com^
-||deskgame.com.ph^
-||crazywin.ph^
-||fbmemotion.com^
-||fbm-emotion.com^
-||fairplay.ph^
-||arionplay.com^
-||sg8.casino^
-||sg8.ph^
-||bsports.ph^
-||747.live^
-||747live.net^
-||pin77.com^
-||buenas.ph^
-||king.ph^
-||luckykingz.com^
-||luckystarz.ph^
-||playtime.ph^
-||gameph.com^
-||sportplus.ph^
-||redfu.com.ph^
-||deskwin.ph^
-||desklucky.ph^
-
-# --- PH-Accessible Offshore / International Brands Targeting PH ---
-||mega888.com^
-||mega888.net^
-||918kiss.com^
-||918kiss.net^
-||pussy888.com^
-||xe88.com^
-||joker123.net^
-||joker388.com^
-||playtech.com^
-||live22.net^
-||ace333.com^
-||newtown.com.my^
-||ntc33.com^
-||sky777.com^
-||rollex11.com^
-||scr888.group^
-||lion777.com^
-||marioclub.net^
-||wm casino.net^
-||wmcasino.net^
-||sexy-gaming.net^
-||sexybaccarat.com^
-||allbet-gaming.com^
-||dreamgaming.com^
-||evolution.com^
-||pragmaticplay.net^
-||spadegaming.com^
-||jili.game^
-||cq9gaming.com^
-||habanero.com^
-
-# --- Sports Betting / E-sabong / Cockfighting ---
-||sabong.net.ph^
-||pitmaster.live^
-||e-sabong.com.ph^
-||sabongonline.ph^
-||s888.live^
-||s888live.com^
-||ds88.live^
-||sabong888.com^
-||3sabong.com^
-||pgosabong.com^
-||gamefowl.live^
-||sabongexpress.com^
-||sabongbetting.ph^
-||sabongph.com^
-||bettingsabong.com^
-||esabong.live^
-
-# --- PH Online Lottery / Jueteng / Numbers Games ---
-||pclottery.com.ph^
-||lottoresults.com.ph^
-||pcso-lotto.com^
-||pcsoweb.com^
-||e-lotto.com.ph^
-||swertres.live^
-||lotto-results.ph^
-||juetengonline.com^
-||sweepstakesph.com^
-
-# --- Casino Apps / APK Download Domains ---
-||gcashcasino.ph^
-||phbet.com^
-||okada.com^
-||pogo.ph^
-||jili-download.com^
-||mega888apk.com^
-||casino-apk.net^
-||918kiss-apk.com^
-||slots-apk.net^
-||betapp.ph^
-||casinoapkph.com^
-||downloadjili.com^
-||jilibetapp.com^
-||ph365.bet^
-||ph365.com^
-||phjoy.com^
-||phwin.net^
-||phwin.com^
-||phlwin.com^
-||phlwin.ph^
-||plus646.com^
-||plus646.ph^
-||peso123.com^
-||peso888.com^
-||lodibet.com^
-||lodi291.com^
-||lodi646.com^
-||lodigames.com^
-||hawkplay.net^
-||hawkplay.com.ph^
-||nuebe.gaming^
-||nuebe9.com^
-||fachai.games^
-||fachai.ph^
-||taya365.com^
-||taya777.com^
-||taya777.ph^
-||777pub.ph^
-||777pub.com^
-||pera777.com^
-||pera777.ph^
-||lucky777.ph^
-||777luck.ph^
-||betr.ph^
-||betso88.com^
-||22fun.com^
-||22fun.ph^
-||qq88.net^
-||qq88.ph^
-||milyon88.com^
-||milyon88.ph^
-||gamitin.ph^
-||swerte99.com^
-||yaman88.com^
-||yaman777.ph^
-||peso63.com^
-||huwag.bet^
-||vbet.ph^
-||fb777.ph^
-||fb777.com^
-||royal888.ph^
-||royal888casino.com^
-||superph.com^
-||superph.bet^
-||superace88.com^
-||superace.ph^
-||777luckyslot.com^
-||777win.ph^
-||8k8.com^
-||8k8.ph^
-||okgames.ph^
-||mwplay888.com^
-||mwplay.net^
-||jdb777.com^
-||j9.com^
-||j9.ph^
-||betso88.com^
-||nice88.ph^
-||nice888.ph^
-
-# Porn / Adult / Illegal
-# --- Major Tube Sites ---
-||pornhub.com^
-||xvideos.com^
-||xvideos2.com^
-||xhamster.com^
-||xhamster2.com^
-||redtube.com^
-||youporn.com^
-||xnxx.com^
-||spankbang.com^
-||spankbang.cc^
-||pornone.com^
-||tnaflix.com^
-||yespornplease.com^
-||txxx.com^
-||tubegalore.com^
-||tube8.com^
-||drtuber.com^
-||hardsextube.com^
-||beeg.com^
-||fuq.com^
-||porntrex.com^
-||fux.com^
-||pornoxo.com^
-||hclips.com^
-||nuvid.com^
-||porndoe.com^
-||porn.com^
-||xxxbunker.com^
-||4tube.com^
-||cliphunter.com^
-||sunporno.com^
-||gotporn.com^
-||alphaporno.com^
-||analdin.com^
-||upornia.com^
-||vporn.com^
-||empflix.com^
-||pornhd.com^
-||fapvid.com^
-||heavy-r.com^
-||slutload.com^
-||hentaigasm.com^
-||hentai-foundry.com^
-||nhentai.net^
-||hanime.tv^
-||rule34.xxx^
-||rule34.paheal.net^
-||gelbooru.com^
-||e621.net^
-# --- Live Cam Sites ---
-||chaturbate.com^
-||cam4.com^
-||stripchat.com^
-||livejasmin.com^
-||bongacams.com^
-||myfreecams.com^
-||camsoda.com^
-||flirt4free.com^
-||imlive.com^
-||streamate.com^
-||xcams.com^
-||camwhores.tv^
-||cams.com^
-||slutroulette.com^
-# --- Creator / Subscription Platforms ---
-||onlyfans.com^
-||fansly.com^
-||fanvue.com^
-||manyvids.com^
-||clips4sale.com^
-||iwantclips.com^
-||niteflirt.com^
-# --- Escort / Hookup / Dating ---
-||adultfriendfinder.com^
-||ashleymadison.com^
-||seeking.com^
-||fling.com^
-||alt.com^
-||iamnaughty.com^
-||benaughty.com^
-||casualx.com^
-||snapsext.com^
-||fuckbook.com^
-||nostringsattached.com^
-# --- Illegal / CSAM / Gore ---
-||childporn.xxx^
-||cpvideos.org^
-||darkwebpornosite.com^
-||rapetube.net^
-||bestgore.com^
-||motherless.com^
-||goregrish.com^
-||kaotic.com^
-||theync.com^
-# --- Adult Content CDNs / Ad Networks ---
-||trafficjunky.net^
-||adultforce.com^
-||adultadworld.com^
-||ero-advertising.com^
-||adxpansion.com^
-||adnium.com^
-||adultadnetwork.com^
-||realsrv.com^
-||phncdn.com^
-||xvideos-cdn.com^
-||xhcdn.com^
-# --- Adult File Hosts / Leaks ---
-||erome.com^
-||nudostar.com^
-||fapello.com^
-||bdsmlr.com^
-||javhd.com^
-||brazzers.com^
-||javmost.com^
-||jav.guru^
-||supjav.com^
-||javbus.com^
-||javdb.com^
-||anonfiles.com^
-||mixdrop.co^
-||streamsb.net^
-||cyberdrop.me^
-||bunkr.is^
-||bunkr.ru^
-||coomer.party^
-||kemono.party^
-||simpcity.su^
-
-# Malware / Phishing / Scams
-# --- Fake Crypto / Wallet Drainers ---
-||malwarebytes.site^
-||phishingsite.com^
+# =========================
+# MALWARE / PHISHING / SCAMS
+# =========================
 ||get-rich-quick.biz^
 ||freegiftcard.com^
-||cryptoairdrop.net^
-||binancegiveaway.net^
 ||teslagiveaway.com^
 ||elonxbtc.com^
-||claimbtc.net^
-||1xbit.co^
-||faucetcrypto.com^
-||getfreecoin.org^
-||fakewallet.net^
 ||walletdrainer.io^
-||myetherwallet.net^
-||meta-masklogin.com^
-||coinminerz.com^
-||cryptominingpool.net^
-||minerstatproxy.net^
-||getcryptotoken.com^
-||airdropsclaim.net^
-||crypto-giveaway.net^
-||fakewallet.org^
-||ledgerlivewallet.net^
-||metamasklogin.io^
-||trustwalletverify.net^
-||defi-airdrop.com^
-||coinclaim.org^
-||walletauthentic.com^
-||verifywallet.net^
-||claimairdrop.io^
-||binance-support.net^
-||binancelogin.net^
-||coinbase-wallet.net^
-||coinbase-support.org^
-||blockchain-wallet.net^
-||blockchain-secure.com^
-||trustwallet-app.com^
-||trustwallet-secure.net^
-||metamask-app.io^
+
+# --- CRYPTO SCAMS ---
+||binancegiveaway.net^
 ||metamask-login.net^
-||wallet-connect.live^
-||walletconnect-app.net^
-||nft-giveaway.net^
-||free-nft-mint.com^
-||nftairdrop.io^
-||solana-airdrop.com^
-||phantom-wallet.net^
-||phantomwallet.live^
-# --- Phishing / Brand Impersonation ---
-||paypal-secure.net^
-||paypal-login.com^
-||paypal-verify.net^
-||appleid-login.net^
-||apple-verify.com^
-||icloud-login.net^
-||amazon-security.net^
-||amazon-verify.org^
-||amazon-login.net^
-||netflix-billing.net^
-||netflix-login.com^
-||netflix-verify.net^
-||microsoft-secure.net^
-||microsoft-verify.com^
-||office365-login.net^
-||google-security.net^
-||google-account-verify.com^
-||facebook-secure.net^
-||facebook-login.org^
-||instagram-verify.net^
+||trustwalletverify.net^
+
+# --- PH SCAMS ---
 ||gcash-verify.net^
 ||gcash-login.org^
 ||gcash-support.net^
-||maya-verify.net^
-||bdo-online.net^
-||bdo-verify.com^
-||bpi-online.net^
-||bpi-secure.com^
-||metrobank-online.net^
-||pnb-verify.com^
-||unionbank-login.net^
-||globe-verify.net^
-||smart-verify.net^
-||dito-verify.com^
-# --- Malware Distribution / RATs / Stealers ---
-||get-rat.com^
-||darkcomet-rat.net^
-||njrat.net^
-||asyncrat.com^
-||redline-stealer.com^
-||raccoon-stealer.net^
-||vidar-stealer.com^
-||azorult.net^
-||formbook.net^
-||lokibot.net^
-||agenttesla.net^
-||nanocore-rat.com^
-||remcos-rat.com^
-||quasarrat.net^
-||gh0strat.net^
-||xworm.net^
-||dcrat.net^
-# --- PH-Specific Scams / Government Impersonation ---
-||freeload-ph.com^
-||load-scam.net^
 ||gcash-hack.com^
-||gcash-generator.net^
-||gcash-free.ph^
-||loadcentral-hack.com^
-||sss-verify.net^
-||sss-login.org^
-||philhealth-verify.net^
-||pagibig-login.net^
-||bir-refund.com^
-||bir-verify.net^
-||psa-verify.com^
-||psa-online.net^
+||maya-verify.net^
 
-# Trackers / Analytics
-# --- General Web Analytics ---
-||google-analytics.com^
-||googletagmanager.com^
-||ssl.google-analytics.com^
-||www.google-analytics.com^
-||analytics.google.com^
-||hotjar.com^
-||static.hotjar.com^
-||script.hotjar.com^
-||vars.hotjar.com^
-||mixpanel.com^
-||api.mixpanel.com^
-||segment.io^
-||segment.com^
-||api.segment.io^
-||cdn.segment.com^
-||optimizely.com^
-||logx.optimizely.com^
-||doubleverify.com^
-||quantserve.com^
-||pixel.quantserve.com^
-||bluekai.com^
-||bkrtx.com^
-||demdex.net^
-||everesttech.net^
-||mathtag.com^
-||pixel.mathtag.com^
-||crashlytics.com^
-||settings.crashlytics.com^
-||e.crashlytics.com^
-||amazon-adsystem.com^
-||fls-na.amazon-adsystem.com^
-||pixel.wp.com^
-||stats.wp.com^
-# --- Social Media Pixels & Trackers ---
-||pixel.facebook.com^
-||an.facebook.com^
-||tr.facebook.com^
-||ads-twitter.com^
-||analytics.twitter.com^
-||t.co^
-||ads.tiktok.com^
-||ad.tiktok.com^
-||analytics.tiktok.com^
-||tracking.linkedin.com^
-||px.ads.linkedin.com^
-||snap.licdn.com^
-||ads.reddit.com^
-||events.reddit.com^
-||alb.reddit.com^
-||log.pinterest.com^
-||analytics.pinterest.com^
-||ads.pinterest.com^
-||ct.pinterest.com^
-||snapads.com^
-||ads.snapchat.com^
-||sc-static.net^
-||tr.snapchat.com^
-||connect.ok.ru^
-||connect.mail.ru^
-||counter.ok.ru^
-# --- Heatmap / Session Recording ---
-||clarity.ms^
-||clarity.microsoft.com^
-||mouseflow.com^
-||a.mouseflow.com^
-||fullstory.com^
-||rs.fullstory.com^
-||luckyorange.com^
-||inspectlet.com^
-||hn.inspectlet.com^
-||sessioncam.com^
-||smartlook.com^
-||rec.smartlook.com^
-||logrocket.com^
-||cdn.logrocket.io^
-||r.logrocket.io^
-||heap.io^
-||heapanalytics.com^
-||cdn.heapanalytics.com^
-||crazyegg.com^
-||script.crazyegg.com^
-||userreplay.net^
-||contentsquare.com^
-# --- A/B Testing / Conversion ---
-||vwo.com^
-||dev.visualwebsiteoptimizer.com^
-||ab-test.com^
-||abtasty.com^
-||convert.com^
-||convertexperiments.com^
-||omtrdc.net^
-||decibelinsight.net^
-# --- CDN-based Trackers ---
-||mc.yandex.ru^
-||mc.yandex.com^
-||an.yandex.ru^
-||counter.yadro.ru^
-||rating.uarating.com^
-||gemius.pl^
-||hit.gemius.pl^
-||mediametrics.ru^
-||rambler.ru^
-# --- Identity / Cross-site Tracking ---
-||rlcdn.com^
-||rubiconproject.com^
-||lijit.com^
-||krxd.net^
-||krux.com^
-||tapad.com^
-||tapadserver.com^
-||id5-sync.com^
-||bidswitch.net^
-||adsrvr.org^
-||tradedesk.com^
-||data.tradedesk.com^
-||match.adsrvr.org^
-||agkn.com^
-||exelate.com^
-||exelator.com^
-||nielsen.com^
-||imrworldwide.com^
-||secure-us.imrworldwide.com^
-||scorecardresearch.com^
-||sb.scorecardresearch.com^
-# --- Email Tracking Pixels ---
-||mandrillapp.com^
-||track.sendgrid.net^
-||sendgrid.net^
-||mailchimp.com^
-||list-manage.com^
-||opens.mailchimp.com^
-||clicks.mailchimp.com^
-||cmail1.com^
-||cmail19.com^
-||cmail20.com^
-||r.mail.yahoo.com^
-||click.mailerlite.com^
-||click.hubspot.com^
-||track.hubspot.com^
-||hubspotemail.net^
-||tracking.klaviyo.com^
-||trk.klclick.com^
-||ct.sendpulse.com^
+||bdo-verify.com^
+||bpi-secure.com^
+||unionbank-login.net^
 
-# Spam / Piracy / VPN / Dark Sites
-# --- Torrent / Piracy Sites ---
-||freemoviehd.net^
-||piratebay.org^
+# =========================
+# GAMBLING (FULL BLOCK)
+# =========================
+||bet365.com^
+||1xbet.com^
+||22bet.com^
+||betway.com^
+||stake.com^
+
+||okbet.com^
+||arenaplus.ph^
+||bingoplus.com^
+||luckycola.ph^
+
+||sabong.net.ph^
+||pitmaster.live^
+
+# =========================
+# ADULT (FULL BLOCK)
+# =========================
+||pornhub.com^
+||xvideos.com^
+||xhamster.com^
+||xnxx.com^
+||spankbang.com^
+||redtube.com^
+||youporn.com^
+
+||onlyfans.com^
+||fansly.com^
+
+||chaturbate.com^
+||stripchat.com^
+
+# =========================
+# PIRACY / TORRENTS
+# =========================
 ||thepiratebay.org^
-||tpb.party^
-||pirate-bay.net^
 ||1337x.to^
-||1337x.is^
-||1337xx.to^
-||kickass2.biz^
-||kickasstorrents.to^
-||kat.am^
-||rarbg.to^
-||rarbgprx.org^
-||torrentgalaxy.to^
-||torrentgalaxy.mx^
-||torlock.com^
 ||yts.mx^
-||yts.ag^
-||yifytorrent.com^
-||eztv.re^
-||eztv.ag^
-||limetorrents.pro^
-||torrends.to^
-||bittorrent.am^
-||torrentz2.eu^
-||torrentz.eu^
-||monova.to^
-||seedpeer.eu^
-||zooqle.com^
-||nyaa.si^
-||animesuge.io^
-||animekaizoku.com^
-||gogoanime.gg^
-||gogoanime.by^
-||animixplay.to^
-||9anime.pl^
-||9anime.to^
-||animedao.to^
-||chia-anime.tv^
-# --- Streaming Piracy / Free Movie Sites ---
-||fmovies.ps^
+||rarbg.to^
+
 ||fmovies.to^
 ||soap2day.to^
-||soap2day.rs^
-||putlocker.com^
-||putlocker9.com^
-||putlockertv.co^
 ||123movies.net^
-||123moviesgo.com^
-||0gomovies.com^
-||solarmovie.pe^
-||solarmovies.net^
-||cmovies.app^
-||movierulz.com^
-||movierulz.tc^
-||tamilrockers.ws^
-||filmyzilla.com^
-||filmywap.com^
-||bollyflix.com^
-||pinoymovies.es^
-||pinoymoviepedia.ru^
-||pinoytambayan.su^
-||pinoyflix.to^
-||lambingan.su^
-||tambayan.su^
-||teleserye.su^
-# --- Direct Download / DDL Sites ---
-||zippyshare.com^
-||uploadfiles.io^
-||rapidgator.net^
-||uploaded.net^
-||filejoker.net^
-||turbobit.net^
-||nitroflare.com^
-||keep2share.cc^
-||datafilehost.com^
-||openload.co^
-||streamcherry.com^
-||upstream.to^
-# --- Web Proxy / Anonymizers ---
-||proxysite.com^
-||hidemy.name^
-||kproxy.com^
-||proxyscrape.com^
-||us-proxy.org^
-||proxylist.geonode.com^
-||free-proxy-list.net^
-||sslproxies.org^
-||spys.one^
-||proxynova.com^
-||proxy-list.download^
-||hidester.com^
-||croxyproxy.com^
-||croxyproxy.rocks^
-||filterbypass.me^
-||unblockasites.com^
-||unblocker.cc^
-||freeproxyserver.net^
-||proxyfree.com^
-||anonymouse.org^
-||zendproxy.com^
-# --- Free VPN / Suspicious VPN Services ---
-||vpnbook.com^
-||vpnhub.com^
-||vpntunnel.com^
-||vpnunlimitedapp.com^
-||vpnapi.io^
-||freevpn.com^
-||freevpnmentor.com^
-||superfreevpn.com^
-||vpngate.net^
-||cjoint.net^
-||hoxx.com^
+||putlocker.com^
+
+# =========================
+# VPN / PROXY / BYPASS
+# =========================
 ||hola.org^
 ||browsec.com^
 ||zenmate.com^
 ||touchvpn.net^
-||urbana-vpn.com^
-||vpnify.net^
-||speedify.com^
-||getambassador.io^
-# --- Spam / Scam / Clickbait Content Networks ---
-||content.ad^
-||zergnet.com^
-||adblade.com^
-||adgebra.com^
-||ligatus.com^
-||plista.com^
-||realclick.co.kr^
-||scanscout.com^
-||spoutable.com^
-||twiago.com^
-||engageya.com^
-||mysitemyway.com^
-||valueclick.com^
-||valueclickmedia.com^
-||undertone.com^
-||madads.com^
-||spoutable.com^
-# --- Dark Web / Onion Resolvers / I2P ---
+
+||proxysite.com^
+||hidemy.name^
+||kproxy.com^
+
 ||tor2web.org^
-||tor2web.com^
 ||onion.to^
-||onion.cab^
-||onion.city^
-||onion.link^
-||dark.fail^
-||ahmia.fi^
-||darkweblink.com^
-||hidden.wiki^
-||zeronet.io^
 
+# =========================
+# CDN / MEDIA (VERY AGGRESSIVE)
+# =========================
+||phncdn.com^
+||xhcdn.com^
 
-# =========================================================
-# --- ADDITIONAL ENTRIES (2025 UPDATE) ---
-# =========================================================
-
-# Additional Ad Networks & Trackers
-||33across.com^
-||sovrn.com^
-||lijit.com^
-||tribal-worldwide.com^
-||turn.com^
-||appnexus.com^
-||liveintent.com^
-||sharethrough.com^
-||triplelift.com^
-||gumgum.com^
-||media.net^
-||mgid.com^
-||teads.tv^
-||onetrust.com^
-||bridgetrack.com^
-||ntv.io^
-||bidswitch.net^
-||themediagrid.com^
-||pubmatic.com^
-||aniview.com^
-||nativo.com^
-||connatix.com^
-||zeotap.com^
-
-# Telemetry / Fingerprinting
-||cdn.speedcurve.com^
-||newrelic.com^
-||nr-data.net^
-||datadoghq.com^
-||sentry.io^
-||loggly.com^
-||raygun.io^
-||bugsnag.com^
-||fullstory.com^
-||mouseflow.com^
-||luckyorange.com^
-||inspectlet.com^
-||sessioncam.com^
-||smartlook.com^
-
-# PH-Specific Spam / Scam
-||gcash-promo.ph^
-||load-promo.net^
-||freegcash.ph^
-||libreng-load.com^
-||globe-promo.ph^
-||smart-promo.ph^
-
-# Additional Crypto Scams
-||binance-airdrop.net^
-||safemoon-claim.com^
-||shibainu-giveaway.com^
-||eth-drop.io^
-||bnb-airdrop.org^
-||nft-mint-free.com^
-||opensea-claim.io^
-||web3-airdrop.net^
-
-# Adware / PUP / Spyware Installers
-||installcore.com^
-||somoto.com^
-||outfox.tv^
-||mypcbackup.com^
-||pckeeper.com^
-||conduit.com^
-||babylon.com^
-||sweetpacks.com^
-||searchnu.com^
-||iminent.com^
-
-
-# =========================================================
-# RECOMMENDED EXTERNAL LISTS (import URLs into AdGuard Home)
-# Settings > Filters > DNS blocklists > Add blocklist
-# =========================================================
-# Steven Black Hosts:
-#   https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-#
-# OISD Full:
-#   https://dbl.oisd.nl/
-#
-# AdGuard DNS Filter:
-#   https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-#
-# EasyList:
-#   https://easylist.to/easylist/easylist.txt
-#
-# URLhaus Malware:
-#   https://urlhaus-filter.pages.dev/urlhaus-filter-hosts.txt
-#
-# Phishing Army:
-#   https://phishing.army/download/phishing_army_blocklist.txt
+# =========================
+# END
 # =========================================================
