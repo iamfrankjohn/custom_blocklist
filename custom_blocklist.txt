@@ -1,57 +1,49 @@
 # =========================================================
-# STRICT MAX BLOCKLIST (AdGuard Home)
-# Goal: Maximum blocking (ads, tracking, gambling, adult,
-#       piracy, telemetry, bypass tools)
-# WARNING: May break apps, logins, media, emails
+# CLEAN MASTER BLOCKLIST (AdGuard Home Optimized)
+# Author: Optimized version
+# Goal: Strong protection WITHOUT breaking common apps
 # =========================================================
 
 # =========================
-# GOOGLE / CORE ADS
+# CORE ADS & TRACKERS
 # =========================
 ||doubleclick.net^
 ||googlesyndication.com^
 ||googletagservices.com^
 ||adservice.google.com^
-||googleads.g.doubleclick.net^
-||pagead2.googlesyndication.com^
-||tpc.googlesyndication.com^
-
-# =========================
-# FULL TRACKING / ANALYTICS
-# =========================
-||google-analytics.com^
-||googletagmanager.com^
-||analytics.google.com^
-
-||hotjar.com^
-||mixpanel.com^
-||segment.io^
-||optimizely.com^
-
+||adservice.google.com.ph^
+||ads.pubmatic.com^
+||adnxs.com^
+||advertising.com^
+||appsflyer.com^
+||moatads.com^
 ||scorecardresearch.com^
-||quantserve.com^
-||doubleverify.com^
+||zedo.com^
+||criteo.com^
+||taboola.com^
+||outbrain.com^
+||revcontent.com^
+||propellerads.com^
+||popads.net^
+||popcash.net^
+||exosrv.com^
+||adform.net^
+||openx.net^
+||smartadserver.com^
+||rubiconproject.com^
+||casalemedia.com^
+||contextweb.com^
+||yieldmo.com^
+||tradedesk.com^
 
 # =========================
-# SOCIAL TRACKING (AGGRESSIVE)
-# =========================
-||t.co^
-||ads-twitter.com^
-||analytics.twitter.com^
-
-||ads.tiktok.com^
-||analytics.tiktok.com^
-||log.byteoversea.com^
-
-||ads.reddit.com^
-||events.reddit.com^
-
-# =========================
-# MOBILE ADS / SDKs
+# MOBILE AD NETWORKS
 # =========================
 ||admob.com^
 ||googleadmob.com^
+||googleads.g.doubleclick.net^
 ||mobileads.google.com^
+||pagead2.googlesyndication.com^
 
 ||unityads.unity3d.com^
 ||vungle.com^
@@ -64,81 +56,76 @@
 ||inmobi.com^
 
 # =========================
-# MICROSOFT / APPLE TELEMETRY
+# TRACKING / ANALYTICS
+# =========================
+||google-analytics.com^
+||googletagmanager.com^
+||hotjar.com^
+||mixpanel.com^
+||segment.io^
+||optimizely.com^
+
+||pixel.facebook.com^
+||tr.facebook.com^
+
+||analytics.tiktok.com^
+||ads.tiktok.com^
+
+# =========================
+# MICROSOFT TELEMETRY
 # =========================
 ||vortex.data.microsoft.com^
 ||settings-win.data.microsoft.com^
 ||watson.telemetry.microsoft.com^
 
+# =========================
+# APPLE TELEMETRY
+# =========================
 ||metrics.apple.com^
 ||api.smoot.apple.com^
-||guzzoni.apple.com^
 
 # =========================
-# APP TRACKING / DEEP LINKS (BLOCKED)
+# MALWARE / SCAM / PHISHING
 # =========================
-||branch.io^
-||app.link^
-||bnc.lt^
+||get-rich-quick.biz^
+||freegiftcard.com^
+||cryptoairdrop.net^
+||teslagiveaway.com^
+||elonxbtc.com^
+||fakewallet.net^
+||walletdrainer.io^
+
+# --- PH SPECIFIC SCAMS ---
+||gcash-verify.net^
+||gcash-login.org^
+||gcash-support.net^
+||maya-verify.net^
+||bdo-verify.com^
+||bpi-secure.com^
 
 # =========================
-# EMAIL TRACKING (BREAKS EMAIL LINKS)
-# =========================
-||sendgrid.net^
-||mailchimp.com^
-||track.sendgrid.net^
-||mandrillapp.com^
-
-# =========================
-# POPUPS / REDIRECT CHAINS
+# POPUPS / REDIRECTS
 # =========================
 ||onclickads.net^
+||shorte.st^
 ||adf.ly^
 ||ouo.io^
 ||linkvertise.com^
-||linkbucks.com^
 
 ||push.house^
 ||pushpush.net^
 ||megapush.com^
 ||adsterra.com^
-||trafficstars.com^
 
 # =========================
-# CRYPTO MINING / ABUSE
+# CRYPTO MINING
 # =========================
 ||coinhive.com^
 ||crypto-loot.com^
 ||webmine.pro^
-||minerstatproxy.net^
 
 # =========================
-# MALWARE / PHISHING / SCAMS
-# =========================
-||get-rich-quick.biz^
-||freegiftcard.com^
-||teslagiveaway.com^
-||elonxbtc.com^
-||walletdrainer.io^
-
-# --- CRYPTO SCAMS ---
-||binancegiveaway.net^
-||metamask-login.net^
-||trustwalletverify.net^
-
-# --- PH SCAMS ---
-||gcash-verify.net^
-||gcash-login.org^
-||gcash-support.net^
-||gcash-hack.com^
-||maya-verify.net^
-
-||bdo-verify.com^
-||bpi-secure.com^
-||unionbank-login.net^
-
-# =========================
-# GAMBLING (FULL BLOCK)
+# GAMBLING (PH + GLOBAL)
 # =========================
 ||bet365.com^
 ||1xbet.com^
@@ -151,11 +138,8 @@
 ||bingoplus.com^
 ||luckycola.ph^
 
-||sabong.net.ph^
-||pitmaster.live^
-
 # =========================
-# ADULT (FULL BLOCK)
+# ADULT CONTENT
 # =========================
 ||pornhub.com^
 ||xvideos.com^
@@ -168,43 +152,39 @@
 ||onlyfans.com^
 ||fansly.com^
 
-||chaturbate.com^
-||stripchat.com^
-
 # =========================
-# PIRACY / TORRENTS
+# PIRACY / STREAMING
 # =========================
-||thepiratebay.org^
-||1337x.to^
-||yts.mx^
-||rarbg.to^
-
 ||fmovies.to^
 ||soap2day.to^
 ||123movies.net^
 ||putlocker.com^
 
-# =========================
-# VPN / PROXY / BYPASS
-# =========================
-||hola.org^
-||browsec.com^
-||zenmate.com^
-||touchvpn.net^
-
-||proxysite.com^
-||hidemy.name^
-||kproxy.com^
-
-||tor2web.org^
-||onion.to^
+||thepiratebay.org^
+||1337x.to^
+||yts.mx^
 
 # =========================
-# CDN / MEDIA (VERY AGGRESSIVE)
+# OPTIONAL (UNCOMMENT IF NEEDED)
+# These may break apps/login/features
 # =========================
-||phncdn.com^
-||xhcdn.com^
 
-# =========================
+# Facebook full block (breaks login/media)
+# ||facebook.com^
+# ||fbcdn.net^
+# ||connect.facebook.net^
+
+# Twitter/X links (breaks redirects)
+# ||t.co^
+
+# App deep links (GCash, Shopee, etc.)
+# ||branch.io^
+# ||app.link^
+
+# Email tracking (may break verification links)
+# ||sendgrid.net^
+# ||mailchimp.com^
+
+# =========================================================
 # END
 # =========================================================
