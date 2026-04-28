@@ -35,12 +35,6 @@
 # =========================
 # SOCIAL TRACKING (AGGRESSIVE)
 # =========================
-||facebook.com^
-||fbcdn.net^
-||connect.facebook.net^
-||pixel.facebook.com^
-||tr.facebook.com^
-
 ||t.co^
 ||ads-twitter.com^
 ||analytics.twitter.com^
