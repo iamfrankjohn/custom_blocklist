@@ -37,25 +37,6 @@
 ||tradedesk.com^
 
 # =========================
-# MOBILE AD NETWORKS
-# =========================
-||admob.com^
-||googleadmob.com^
-||googleads.g.doubleclick.net^
-||mobileads.google.com^
-||pagead2.googlesyndication.com^
-
-||unityads.unity3d.com^
-||vungle.com^
-||chartboost.com^
-||tapjoy.com^
-||applovin.com^
-||ironsource.com^
-||fyber.com^
-||smaato.net^
-||inmobi.com^
-
-# =========================
 # TRACKING / ANALYTICS
 # =========================
 ||google-analytics.com^
@@ -64,25 +45,6 @@
 ||mixpanel.com^
 ||segment.io^
 ||optimizely.com^
-
-||pixel.facebook.com^
-||tr.facebook.com^
-
-||analytics.tiktok.com^
-||ads.tiktok.com^
-
-# =========================
-# MICROSOFT TELEMETRY
-# =========================
-||vortex.data.microsoft.com^
-||settings-win.data.microsoft.com^
-||watson.telemetry.microsoft.com^
-
-# =========================
-# APPLE TELEMETRY
-# =========================
-||metrics.apple.com^
-||api.smoot.apple.com^
 
 # =========================
 # MALWARE / SCAM / PHISHING
@@ -94,14 +56,6 @@
 ||elonxbtc.com^
 ||fakewallet.net^
 ||walletdrainer.io^
-
-# --- PH SPECIFIC SCAMS ---
-||gcash-verify.net^
-||gcash-login.org^
-||gcash-support.net^
-||maya-verify.net^
-||bdo-verify.com^
-||bpi-secure.com^
 
 # =========================
 # POPUPS / REDIRECTS
