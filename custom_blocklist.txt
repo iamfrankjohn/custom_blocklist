@@ -2,6 +2,7 @@
 # CLEAN MASTER BLOCKLIST (AdGuard Home Optimized)
 # Author: Optimized version
 # Goal: Strong protection WITHOUT breaking common apps
+# Last Updated: 2025
 # =========================================================
 
 # =========================
@@ -15,11 +16,9 @@
 ||ads.pubmatic.com^
 ||adnxs.com^
 ||advertising.com^
-||appsflyer.com^
 ||moatads.com^
 ||scorecardresearch.com^
 ||zedo.com^
-||criteo.com^
 ||taboola.com^
 ||outbrain.com^
 ||revcontent.com^
@@ -34,49 +33,126 @@
 ||casalemedia.com^
 ||contextweb.com^
 ||yieldmo.com^
-||tradedesk.com^
+# Added
+||media.net^
+||sharethrough.com^
+||sovrn.com^
+||lijit.com^
+||33across.com^
+||triplelift.com^
+||appnexus.com^
+||yldbt.com^
+||adroll.com^
+||quantserve.com^
+||bidswitch.net^
+||springserve.com^
+||indexww.com^
 
 # =========================
 # TRACKING / ANALYTICS
 # =========================
-||google-analytics.com^
-||googletagmanager.com^
 ||hotjar.com^
 ||mixpanel.com^
 ||segment.io^
+||segment.com^
 ||optimizely.com^
+# Added
+||amplitude.com^
+||heap.io^
+||fullstory.com^
+||logrocket.com^
+||mouseflow.com^
+||crazyegg.com^
+||clarity.ms^
+||clicky.com^
+||statcounter.com^
+||chartbeat.com^
+||parsely.com^
+||newrelic.com^
+||nr-data.net^
+||datadog-browser-agent.com^
+||intercom.io^
+||intercomcdn.com^
 
 # =========================
-# MALWARE / SCAM / PHISHING
+# FINGERPRINTING / ID SYNCING
 # =========================
-||get-rich-quick.biz^
-||freegiftcard.com^
-||cryptoairdrop.net^
-||teslagiveaway.com^
-||elonxbtc.com^
-||fakewallet.net^
-||walletdrainer.io^
+||adsymptotic.com^
+||rlcdn.com^
+||bluekai.com^
+||demdex.net^
+||exelator.com^
+||krxd.net^
+||rfihub.com^
+||agkn.com^
+||tapad.com^
+||liveramp.com^
+||acuityads.com^
+||zeotap.com^
 
 # =========================
-# POPUPS / REDIRECTS
+# POPUPS / REDIRECTS / URL SHORTENERS
 # =========================
 ||onclickads.net^
 ||shorte.st^
 ||adf.ly^
 ||ouo.io^
 ||linkvertise.com^
-
 ||push.house^
 ||pushpush.net^
 ||megapush.com^
 ||adsterra.com^
+# Added
+||clickadu.com^
+||hilltopads.net^
+||trafficjunky.net^
+||juicyads.com^
+||exoclick.com^
+||plugrush.com^
+||popunder.net^
+||revcontent.com^
+||mgid.com^
+||adskeeper.co.uk^
+||underwayads.com^
 
 # =========================
-# CRYPTO MINING
+# CRYPTO MINING (IN-BROWSER)
 # =========================
-||coinhive.com^
-||crypto-loot.com^
 ||webmine.pro^
+||minero.cc^
+||coin-hive.com^
+||jsecoin.com^
+||cryptoloot.pro^
+||monerominer.rocks^
+||authedmine.com^
+||ppoi.org^
+
+# =========================
+# MALWARE / PHISHING (PATTERN-BASED)
+# =========================
+# Note: Static scam domains rotate — rely on AdGuard DNS filters for live coverage
+# These are long-lived confirmed bad actors
+||notifyweb.co^
+||updatenow.net^
+||securepcfix.com^
+||yourdeviceneedsupdate.com^
+||windowsdefenderalert.com^
+||fake-captcha.com^
+||captcha-confirm.com^
+
+# =========================
+# PUSH NOTIFICATION SPAM
+# =========================
+||onesignal.com^        # WARNING: also used by legit apps for real notifications — review before enabling
+||pushwoosh.com^
+||gravitec.net^
+||sendpulse.com^
+||subscribers.com^
+||izooto.com^
+||aimtell.com^
+||webpushr.com^
+||pushengage.com^
+||vwo.com^
 
 # =========================
 # GAMBLING (PH + GLOBAL)
@@ -86,11 +162,27 @@
 ||22bet.com^
 ||betway.com^
 ||stake.com^
-
 ||okbet.com^
 ||arenaplus.ph^
 ||bingoplus.com^
 ||luckycola.ph^
+# Added PH-specific
+||jilibet.com^
+||peso888.com^
+||betso88.com^
+||winfordbet.com^
+||lodibet.com^
+||hawkplay.net^
+||nuebe9.com^
+||milyon88.com^
+||747live.net^
+||phlwin.com^
+# Global
+||draftkings.com^
+||fanduel.com^
+||bovada.lv^
+||betmgm.com^
+||pointsbet.com^
 
 # =========================
 # ADULT CONTENT
@@ -102,18 +194,48 @@
 ||spankbang.com^
 ||redtube.com^
 ||youporn.com^
-
 ||onlyfans.com^
 ||fansly.com^
+# Added
+||brazzers.com^
+||naughtyamerica.com^
+||bangbros.com^
+||mofos.com^
+||realitykings.com^
+||tube8.com^
+||beeg.com^
+||hclips.com^
+||eporner.com^
+||txxx.com^
+||porntrex.com^
+||4tube.com^
+||drtuber.com^
+||keezmovies.com^
+||slutload.com^
 
 # =========================
-# PIRACY / STREAMING
+# PIRACY / ILLEGAL STREAMING
 # =========================
 ||fmovies.to^
 ||soap2day.to^
 ||123movies.net^
 ||putlocker.com^
-
 ||thepiratebay.org^
 ||1337x.to^
 ||yts.mx^
+# Added
+||rargb.to^
+||kickasstorrents.to^
+||torrentz2.eu^
+||nyaa.si^
+||zooqle.com^
+||limetorrents.info^
+||torrentgalaxy.to^
+||gomovies.sx^
+||movies123.net^
+||lookmovie.ag^
+||flixhq.to^
+||bflix.to^
+||hdtoday.tv^
+||streameast.live^
+||crackstreams.com^
